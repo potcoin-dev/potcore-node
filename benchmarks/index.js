@@ -28,7 +28,7 @@ var fixtureData = {
 
 var bitcoind = require('../').services.Bitcoin({
   node: {
-    datadir: process.env.HOME + '/.litecoin',
+    datadir: process.env.HOME + '/.potcoin',
     network: {
       name: 'testnet'
     }
@@ -52,7 +52,7 @@ bitcoind.on('ready', function() {
 
   var client = new bitcoin.Client({
     host: 'localhost',
-    port: 19332,
+    port: 142000,
     user: 'bitcoin',
     pass: 'local321'
   });
