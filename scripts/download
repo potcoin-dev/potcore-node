@@ -6,7 +6,7 @@ root_dir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)/.."
 platform=`uname -a | awk '{print tolower($1)}'`
 arch=`uname -m`
 version="0.13.2"
-url="https://github.com/potcoin-project/potcore-potcoin/releases/download"
+url="https://github.com/potcoin-dev/potcore-potcoin/releases/download"
 tag="v0.13.2.1-potcore-rc2"
 
 if [ "${platform}" == "linux" ]; then
